@@ -1,0 +1,229 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Add a slightly darker gray background to everything below the navigation bar */
+  nav ~ * {
+    background-color: #555;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #555;
+  }
+
+  /* Main Content */
+#main-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.portfolio_title {
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  margin-top: 50px;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Image and Text */
+#about {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 300px;
+}
+#about-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.vertical-separator {
+  height: 500px; /* set the height of the separator */
+  width: 0; /* set the width to 0 so that it only takes up vertical space */
+  border-left: 5px solid #cbcbcb; /* add a 1px solid white border on the left side */
+  margin: 0 20px; /* set the margin to add space around the separator */
+  margin-right: 100px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.skin_texture {
+  
+  margin: 40 20px;;
+}
+
+/* Separator */
+
+.project-1 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+}
+.project-1 img {
+  margin-left: 200px;
+}
+.project-1-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+
+.project-1-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-right: 30px;
+  margin-left: 15px;
+}
+.project-1-separator {
+  height: 500px; /* set the height of the separator */
+  width: 0; /* set the width to 0 so that it only takes up vertical space */
+  border-left: 5px solid #cbcbcb; /* add a 1px solid white border on the left side */
+  margin: 0 20px; /* set the margin to add space around the separator */
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.project-2 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+.project-2 img {
+  margin-right: 200px;
+}
+.project-2-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.project-2-separator {
+  height: 500px; /* set the height of the separator */
+  width: 0; /* set the width to 0 so that it only takes up vertical space */
+  border-left: 5px solid #cbcbcb; /* add a 1px solid white border on the left side */
+  margin: 0 20px; /* set the margin to add space around the separator */
+  margin-right: 300px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.project-3 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+}
+.project-3 img {
+  margin-left: 200px;
+}
+.project-3-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-right: 30px;
+  margin-left: 15px;
+}
+.project-3-separator {
+  height: 500px; /* set the height of the separator */
+  width: 0; /* set the width to 0 so that it only takes up vertical space */
+  border-left: 5px solid #cbcbcb; /* add a 1px solid white border on the left side */
+  margin: 0 20px; /* set the margin to add space around the separator */
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.project-4 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+.project-4 img {
+  margin-right: 200px;
+}
+.project-4-txt {
+  text-align:justify;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.project-4-separator {
+  height: 500px; /* set the height of the separator */
+  width: 0; /* set the width to 0 so that it only takes up vertical space */
+  border-left: 5px solid #cbcbcb; /* add a 1px solid white border on the left side */
+  margin: 0 20px; /* set the margin to add space around the separator */
+  margin-right: 300px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+/* Portfolio Images */
+
+.seperator {
+  border: none;
+  border-top: 5px solid #fff;
+  height: 0;
+  width: 80%;
+  margin: 0 auto;
+}

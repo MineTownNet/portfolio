@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>UDC-Studios</title>
+</head>
+<body>
+    <section>
+        <div class="form-box-login">
+            <div class="form-value">
+                <a onclick="goBack()" class="back-button-login">Back</a>
+                <form action="connect.php" method="post">
+                    <h2>Log In</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have an account?  <a href="sign-up.html">Register</a></p>
+                    </div>
+                </form>
+                <script src="sign-up.js"></script>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

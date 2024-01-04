@@ -1,0 +1,252 @@
+/* Add some basic styles for the navigation bar */
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Add a slightly darker gray background to everything below the navigation bar */
+  nav ~ * {
+    background-color: #555;
+  }
+  
+  /* Style the button */
+  .join-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/green_button_default.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: transparent;
+    image-rendering: pixelated;
+  }
+  
+  
+  .join-button:hover {
+    background-image: url('../textures/buttons/green_button_hover.png');
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #555;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-items {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-item {
+    flex: 0 0 33.33%;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+  }
+  
+  .slider-item button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .slider-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 160px;
+    background-color: #fff;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slider-control-left {
+    left: 0;
+    background-image: url('../textures/buttons/arrow_left.png');
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     image-rendering: pixelated;
+
+  }
+  .slider-control-left:hover {
+    background-image: url(../textures/buttons/arrow_left_hover.png);
+  }
+  
+  .slider-control-right {
+    right: 0;
+    background-image: url('../textures/buttons/arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+
+  .slider-control-right:hover {
+    background-image: url(../textures/buttons/arrow_right_hover.png);
+  }
+  
+
+  
+
+  
+  .slider-item button {
+    background-size: cover;
+    width: 128px; /* replace with the desired width */
+    height: 128px; /* replace with the desired height */  
+  }
+  .papier-bndc {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/portfolio_icons/papier_bndc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+  }
+
+  .zaksgameplays1 {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/portfolio_icons/zaksgameplays1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+  }
+
+  .t3rd-mango {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/portfolio_icons/t3rd-mango.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+  }
+
+  .tangomatisch {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/portfolio_icons/tangomatisch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+  }
+
+  .placeholder {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    background-image: url('../textures/buttons/portfolio_icons/placeholder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+  }
+  .services-title {}
+/* Add focus styles for better accessibility */
+nav a:focus, .join-button:focus {
+    outline: 2px solid #ff0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+}

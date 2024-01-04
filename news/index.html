@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1><a href="../home/index.html">UDC-Studios</a></h1>
+        <ul>
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="../news/index.html">News</a></li>
+          <li><a href="../contact us/index.html">Contact Us</a></li>
+          <li><a href="../LogIn/log-in.html">Log In</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div id="burger-icon"></div>
+        <h1>News Page</h1>
+        <button id="toggle-button">Create News</button>
+    </header>
+    <main>
+        <section id="news-creation" style="display: none;">
+            <h2>Create News</h2>
+            <form id="news-form">
+                <label for="news-content">What's new?</label><br>
+                <textarea id="news-content" name="news-content"></textarea><br>
+                <label for="file-upload">Upload an image or video:</label><br>
+                <input type="file" id="file-upload" name="file-upload" accept=".png, .jpeg, .jpg, .img, .mp4, .gif"><br>
+                <input type="submit" value="Post">
+            </form>
+        </section>
+        <section id="news-feed">
+            <h2>Latest News</h2>
+            <article class="news-post">
+                <h3>News Post Title</h3>
+                <p>This is the content of the news post.</p>
+            </article>
+            <!-- Weitere News-Posts würden hierhin kommen -->
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

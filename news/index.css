@@ -1,0 +1,84 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  /* Add a slightly darker gray background to everything below the navigation bar */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#news-creation {
+    margin-bottom: 2em;
+}
+
+#news-form label,
+#news-form textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#news-form textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.news-post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+.news-post h3 {
+    margin-top: 0;
+}
+
+#toggle-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-button:hover {
+    background-color: #0056b3;
+}
+
